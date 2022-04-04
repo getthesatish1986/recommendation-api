@@ -8,7 +8,7 @@ Created on Tue Mar 29 19:56:35 2022
 import numpy as np
 import pandas as pd
 
-#df1 = pd.read_excel(r'C:\Users\Satish S\Desktop\python flask\Data set Template\Final data.xlsx')
+df1 = pd.read_excel(r'\Data set Template\Final data.xlsx')
 
 df=df1
 df.columns=['nm','gr','ug','ugsp','irt','ski','cgp','cert','certc','wrk','job','mas']
@@ -80,7 +80,7 @@ df3=df4.copy()
 
 dfj=df.loc[df.wrk =='Yes'].iloc[:,[1,2,3,4,9]]
 #dfj.to_csv(r'C:\Users\Satish S\Desktop\python flask\Data set Template\df_job_data_set_for_imputy.csv')
-#dfj = pd.read_excel(r'C:\Users\Satish S\Desktop\python flask\Data set Template\df_job_data_set_for_impute_to.xlsx')
+dfj = pd.read_excel(r'\Data set Template\df_job_data_set_for_impute_to.xlsx')
 dfjcopy=dfj.iloc[:,[2,3,4,5,9]]
 dfj.rename(columns = {'Unnamed: 0':'index'}, inplace = True)
 dfj.set_index(['index'], inplace = True)
@@ -88,7 +88,7 @@ dfj=dfj.iloc[:,[1,2,3,4,8]]
 
 dfm=df.loc[(df.wrk =='No') & (df['mas'] !="" )].iloc[:,[1,2,3,4,10]]
 #dfm.to_csv(r'C:\Users\Satish S\Desktop\python flask\Data set Template\df_mast_data_set_for_imputy.csv')
-#dfm=pd.read_csv(r"C:\Users\Satish S\Desktop\python flask\Data set Template\df_mast_data_set_for_imputy_to.csv", encoding= 'unicode_escape')
+dfm=pd.read_csv(r"\Data set Template\df_mast_data_set_for_imputy_to.csv", encoding= 'unicode_escape')
 dfmcopy=dfm.iloc[:,[2,3,4,5,9]]
 dfm.rename(columns = {'Unnamed: 0':'index'}, inplace = True)
 dfm.set_index(['index'], inplace = True)
