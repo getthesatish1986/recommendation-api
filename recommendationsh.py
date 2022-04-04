@@ -8,7 +8,7 @@ Created on Tue Mar 29 19:56:35 2022
 import numpy as np
 import pandas as pd
 
-df1 = pd.read_excel(r'\Data set Template\Final data.xlsx')
+df1 = pd.read_excel(r'Final data.xlsx')
 
 df=df1
 df.columns=['nm','gr','ug','ugsp','irt','ski','cgp','cert','certc','wrk','job','mas']
