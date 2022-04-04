@@ -7,3 +7,4 @@ Werkzeug==2.0.0
 Jinja2==3.0.0
 itsdangerous==2.0.0
 MarkupSafe==2.0.0
+openpyxl==3.0.9
