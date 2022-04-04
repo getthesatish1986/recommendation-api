@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-import recommendationsh
+#import recommendationsh
 
 app = Flask(__name__)
 
@@ -40,7 +40,7 @@ def register():
         # res = recommendation.get_recommendations_job(request.args.get('UG','Mechanical Engineering','dddd','ddddd',10))
         #return render_template('confirm_page.html', name=ug,age=ug_spec,city=Interest)
         #ab = recommendationsh.get_recommendations_job(str(ug),str(ug_spec),str(Interest),str(Skill),int(e))
-        ab = recommendationsh.rec(which,dic,int(e))
+        #ab = recommendationsh.rec(which,dic,int(e))
         print(ab)
 
         return render_template('index.html', first=ab[1], sec=ab[2],thir=ab[3],four=ab[4],fifth=ab[5],sixth=ab[6],seven=ab[7],eight=ab[8],nine=ab[9],ten=ab[10])
