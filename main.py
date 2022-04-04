@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-#import recommendationsh
+import recommendationsh
 
 app = Flask(__name__,template_folder='template3')
 
